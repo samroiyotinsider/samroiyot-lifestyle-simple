@@ -15,9 +15,16 @@ const PORT = process.env.PORT || 3001
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production'
 
 // Database connection
+console.log('DATABASE_URL:', process.env.DATABASE_URL ? 'Set' : 'Not set');
+console.log('NODE_ENV:', process.env.NODE_ENV);
+
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: process.env.DATABASE_URL?.includes('localhost') ? false : { rejectUnauthorized: false }
+})
+
+pool.on('error', (err) => {
+  console.error('Unexpected error on idle client', err)
 })
 
 // Middleware
