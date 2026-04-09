@@ -15,12 +15,16 @@ const PORT = process.env.PORT || 3001
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production'
 
 // Database connection
+const dbUrl = process.env.DATABASE_URL || process.env.PGURL || `postgresql://${process.env.PGUSER}:${process.env.PGPASSWORD}@${process.env.PGHOST}:${process.env.PGPORT}/${process.env.PGDATABASE}`;
+
 console.log('DATABASE_URL:', process.env.DATABASE_URL ? 'Set' : 'Not set');
+console.log('PGHOST:', process.env.PGHOST ? 'Set' : 'Not set');
 console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('Attempting to connect to:', dbUrl.substring(0, 50) + '...');
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: process.env.DATABASE_URL?.includes('localhost') ? false : { rejectUnauthorized: false }
+  connectionString: dbUrl,
+  ssl: { rejectUnauthorized: false }
 })
 
 pool.on('error', (err) => {
