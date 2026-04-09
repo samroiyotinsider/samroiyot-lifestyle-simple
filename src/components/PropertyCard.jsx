@@ -1,8 +1,14 @@
 import './PropertyCard.css'
 
 export default function PropertyCard({ property }) {
+  const handleCardClick = () => {
+    if (property.listing_url) {
+      window.open(property.listing_url, '_blank')
+    }
+  }
+
   return (
-    <div className="card property-card">
+    <div className="card property-card" onClick={handleCardClick} style={{ cursor: property.listing_url ? 'pointer' : 'default' }}>
       <div className="property-image">
         {property.image_url ? (
           <img src={property.image_url} alt={property.name} />

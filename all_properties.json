@@ -10,7 +10,8 @@
     "featured": true,
     "type": "resort-estate",
     "image_url": "/hero-luxury-villa.jpg",
-    "description": "Already generating 5-star Airbnb reviews and ranked in the top 5% of properties worldwide, Mango Hills is not just a home — it is a fully operational luxury retreat estate set inside a thriving 4-rai mango plantation in the heart of Sam Roi Yot National Park, just 1.5km from Dolphin Bay's pristine beaches."
+    "description": "Already generating 5-star Airbnb reviews and ranked in the top 5% of properties worldwide, Mango Hills is not just a home — it is a fully operational luxury retreat estate set inside a thriving 4-rai mango plantation in the heart of Sam Roi Yot National Park, just 1.5km from Dolphin Bay's pristine beaches.",
+    "listing_url": "https://www.fazwaz.com/property-sales/5-bedroom-hotel-for-sale-in-sam-roi-yot-hua-hin-u5988038"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "featured": true,
     "type": "condo",
     "image_url": "/hero-dolphin-bay-beach.jpg",
-    "description": "Sea View Condo for Sale at The Sea Condominium, Sam Roi Yot. Nestled directly at Dolphin Bay on Sam Roi Yot Beach (just steps from the sand), this modern condo (completed 2017) offers breathtaking panoramic sea views, island vistas, and the serene backdrop of Khao Sam Roi Yot National Park."
+    "description": "Sea View Condo for Sale at The Sea Condominium, Sam Roi Yot. Nestled directly at Dolphin Bay on Sam Roi Yot Beach (just steps from the sand), this modern condo (completed 2017) offers breathtaking panoramic sea views, island vistas, and the serene backdrop of Khao Sam Roi Yot National Park.",
+    "listing_url": "https://www.fazwaz.com/property-sales/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5985439"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "featured": true,
     "type": "land",
     "image_url": "/land_u6131064_main.webp",
-    "description": "Unlock unlimited potential in Sam Roi Yot – Thailand's serene hidden coastal gem, perfect for European expats, Chinese/Singaporean investors, or global buyers seeking a secure, build-ready plot with strong appreciation and flexibility."
+    "description": "Unlock unlimited potential in Sam Roi Yot – Thailand's serene hidden coastal gem, perfect for European expats, Chinese/Singaporean investors, or global buyers seeking a secure, build-ready plot with strong appreciation and flexibility.",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
   },
   {
     "id": 4,
@@ -48,7 +51,8 @@
     "size_sqm": 312,
     "featured": false,
     "type": "land",
-    "image_url": "/hero-national-park.jpg"
+    "image_url": "/hero-national-park.jpg",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
   },
   {
     "id": 5,
@@ -60,7 +64,8 @@
     "size_sqm": 460,
     "featured": false,
     "type": "house",
-    "image_url": "/house_u6081299_main.webp"
+    "image_url": "/house_u6081299_main.webp",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
   },
   {
     "id": 6,
@@ -72,7 +77,8 @@
     "size_sqm": 460,
     "featured": false,
     "type": "house",
-    "image_url": "/house_u6081309_main.webp"
+    "image_url": "/house_u6081309_main.webp",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
   },
   {
     "id": 7,
@@ -84,7 +90,8 @@
     "size_sqm": 105,
     "featured": false,
     "type": "house",
-    "image_url": "/house_u6081318_main.webp"
+    "image_url": "/house_u6081318_main.webp",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
   },
   {
     "id": 8,
@@ -96,7 +103,8 @@
     "size_sqm": 270,
     "featured": false,
     "type": "house",
-    "image_url": "/tropical_villa_main.webp"
+    "image_url": "/tropical_villa_main.webp",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
   },
   {
     "id": 9,
@@ -108,7 +116,8 @@
     "size_sqm": 574.8,
     "featured": false,
     "type": "land",
-    "image_url": "/hero-beach-fishermen.jpg"
+    "image_url": "/hero-beach-fishermen.jpg",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971841"
   },
   {
     "id": 10,
@@ -120,7 +129,8 @@
     "size_sqm": 150,
     "featured": false,
     "type": "land",
-    "image_url": "/hero-dolphin-bay-sunset.jpg"
+    "image_url": "/hero-dolphin-bay-sunset.jpg",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971886"
   },
   {
     "id": 11,
@@ -132,7 +142,8 @@
     "size_sqm": 1748,
     "featured": false,
     "type": "land",
-    "image_url": "/punoi_bungalow_hero.webp"
+    "image_url": "/punoi_bungalow_hero.webp",
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971940"
   },
   {
     "id": 12,
@@ -144,6 +155,7 @@
     "size_sqm": 70,
     "featured": false,
     "type": "condo",
-    "image_url": "/kits-bungalow.png"
+    "image_url": "/kits-bungalow.png",
+    "listing_url": "https://www.fazwaz.com/property-sales/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5971738"
   }
 ]
