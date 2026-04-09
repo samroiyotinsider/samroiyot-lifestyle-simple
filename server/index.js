@@ -3,29 +3,30 @@ import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import bcryptjs from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = express()
 const PORT = process.env.PORT || 3001
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production'
 
-// In-memory data storage (will be reset on server restart)
+// Load all properties from JSON file
+let properties = []
+try {
+  const propertiesPath = path.join(__dirname, '../all_properties.json')
+  const data = fs.readFileSync(propertiesPath, 'utf8')
+  properties = JSON.parse(data)
+  console.log(`✅ Loaded ${properties.length} properties from all_properties.json`)
+} catch (err) {
+  console.error('Error loading properties:', err)
+  properties = []
+}
+
+// In-memory user data
 let users = [
   { id: 1, username: 'admin', password: '$2a$10$YIjlrTxVxJ8Yz8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8Z8' } // pre-hashed 'admin123'
-]
-
-let properties = [
-  { id: 1, name: 'Beachfront Villa', location: 'Hua Hin', description: 'Luxury beachfront property', price: 5000, bedrooms: 4, bathrooms: 3, image_url: 'https://via.placeholder.com/400x300?text=Beachfront+Villa', contact_phone: '+66-1-2345-6789' },
-  { id: 2, name: 'Mountain Retreat', location: 'Khao Yai', description: 'Serene mountain getaway', price: 3500, bedrooms: 3, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Mountain+Retreat', contact_phone: '+66-1-2345-6789' },
-  { id: 3, name: 'City Penthouse', location: 'Bangkok', description: 'Modern city living', price: 8000, bedrooms: 3, bathrooms: 3, image_url: 'https://via.placeholder.com/400x300?text=City+Penthouse', contact_phone: '+66-1-2345-6789' },
-  { id: 4, name: 'Tropical Garden Home', location: 'Phuket', description: 'Lush tropical paradise', price: 4500, bedrooms: 5, bathrooms: 4, image_url: 'https://via.placeholder.com/400x300?text=Tropical+Garden', contact_phone: '+66-1-2345-6789' },
-  { id: 5, name: 'Riverside Cottage', location: 'Chiang Mai', description: 'Charming riverside home', price: 2500, bedrooms: 2, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Riverside+Cottage', contact_phone: '+66-1-2345-6789' },
-  { id: 6, name: 'Luxury Resort Villa', location: 'Koh Samui', description: 'Resort-style living', price: 7000, bedrooms: 4, bathrooms: 4, image_url: 'https://via.placeholder.com/400x300?text=Resort+Villa', contact_phone: '+66-1-2345-6789' },
-  { id: 7, name: 'Modern Townhouse', location: 'Pattaya', description: 'Contemporary design', price: 3000, bedrooms: 3, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Townhouse', contact_phone: '+66-1-2345-6789' },
-  { id: 8, name: 'Beachside Bungalow', location: 'Krabi', description: 'Cozy beach bungalow', price: 2800, bedrooms: 2, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Bungalow', contact_phone: '+66-1-2345-6789' },
-  { id: 9, name: 'Luxury Penthouse', location: 'Hua Hin', description: 'Premium penthouse', price: 6500, bedrooms: 4, bathrooms: 3, image_url: 'https://via.placeholder.com/400x300?text=Luxury+Penthouse', contact_phone: '+66-1-2345-6789' },
-  { id: 10, name: 'Private Island Villa', location: 'Phang Nga', description: 'Exclusive island property', price: 9000, bedrooms: 5, bathrooms: 5, image_url: 'https://via.placeholder.com/400x300?text=Island+Villa', contact_phone: '+66-1-2345-6789' },
-  { id: 11, name: 'Urban Loft', location: 'Bangkok', description: 'Trendy urban space', price: 4000, bedrooms: 2, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Urban+Loft', contact_phone: '+66-1-2345-6789' },
-  { id: 12, name: 'Garden Villa', location: 'Chiang Mai', description: 'Beautiful garden setting', price: 3200, bedrooms: 3, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Garden+Villa', contact_phone: '+66-1-2345-6789' }
 ]
 
 // Middleware
@@ -119,6 +120,6 @@ app.get('*', (req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`)
-  console.log(`✅ All 12 properties loaded in memory`)
+  console.log(`✅ All ${properties.length} properties loaded`)
   console.log(`✅ Admin account ready: username=admin, password=admin123`)
 })

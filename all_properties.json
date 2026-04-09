@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Mango Hills — Exclusive Resort Estate for Sale | Sam Roi Yot, Thailand",
+    "price_eur": 483000,
+    "price_thb": "17,700,000",
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "size_sqm": 258,
+    "featured": true,
+    "type": "resort-estate",
+    "description": "Already generating 5-star Airbnb reviews and ranked in the top 5% of properties worldwide, Mango Hills is not just a home — it is a fully operational luxury retreat estate set inside a thriving 4-rai mango plantation in the heart of Sam Roi Yot National Park, just 1.5km from Dolphin Bay's pristine beaches."
+  },
+  {
+    "id": 2,
+    "title": "1 Bedroom Condo for Sale at The Sea Condominium",
+    "price_eur": 122600,
+    "price_thb": "4,500,000",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "size_sqm": 52.76,
+    "featured": true,
+    "type": "condo",
+    "description": "Sea View Condo for Sale at The Sea Condominium, Sam Roi Yot. Nestled directly at Dolphin Bay on Sam Roi Yot Beach (just steps from the sand), this modern condo (completed 2017) offers breathtaking panoramic sea views, island vistas, and the serene backdrop of Khao Sam Roi Yot National Park."
+  },
+  {
+    "id": 3,
+    "title": "Chanote Land 3.2 Rai Sam Roi Yot – Divisible into 3 Plots",
+    "price_eur": 195000,
+    "price_thb": "7,150,000",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size_sqm": 4800,
+    "featured": true,
+    "type": "land",
+    "description": "Unlock unlimited potential in Sam Roi Yot – Thailand's serene hidden coastal gem, perfect for European expats, Chinese/Singaporean investors, or global buyers seeking a secure, build-ready plot with strong appreciation and flexibility."
+  },
+  {
+    "id": 4,
+    "title": "So close to the beach side Land Plot for Sale | Sam Roi Yot",
+    "price_eur": 81500,
+    "price_thb": "2,990,000",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size_sqm": 312,
+    "featured": false,
+    "type": "land"
+  },
+  {
+    "id": 5,
+    "title": "(275) 2-Bedroom House Expansive Garden Mountain View Beauty",
+    "price_eur": 95300,
+    "price_thb": "3,500,000",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "size_sqm": 460,
+    "featured": false,
+    "type": "house"
+  },
+  {
+    "id": 6,
+    "title": "(273) 2-Bedroom House Mountain Views for Sale Sam Roi Yot TH",
+    "price_eur": 95300,
+    "price_thb": "3,500,000",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "size_sqm": 460,
+    "featured": false,
+    "type": "house"
+  },
+  {
+    "id": 7,
+    "title": "(274) 2-Bedroom House Garden + Mountain Views Sam Roi Yot TH",
+    "price_eur": 81700,
+    "price_thb": "3,000,000",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "size_sqm": 105,
+    "featured": false,
+    "type": "house"
+  },
+  {
+    "id": 8,
+    "title": "Renovated 3-Bed House + Chanote Land Sam Roi Yot – Mountain",
+    "price_eur": 190000,
+    "price_thb": "6,970,000",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "size_sqm": 270,
+    "featured": false,
+    "type": "house"
+  },
+  {
+    "id": 9,
+    "title": "Prime Sea & Mountain View Land 300m to Beach Sam Roi Yot",
+    "price_eur": 59900,
+    "price_thb": "2,200,000",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size_sqm": 574.8,
+    "featured": false,
+    "type": "land"
+  },
+  {
+    "id": 10,
+    "title": "Chanote Land 150 sqm Sam Roi Yot 1.9km to Sea + Mountain View",
+    "price_eur": 54500,
+    "price_thb": "2,000,000",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size_sqm": 150,
+    "featured": false,
+    "type": "land"
+  },
+  {
+    "id": 11,
+    "title": "Chanote Land 1 Rai 37 sq wah Sam Roi Yot – Mountain View",
+    "price_eur": 54500,
+    "price_thb": "2,000,000",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size_sqm": 1748,
+    "featured": false,
+    "type": "land"
+  },
+  {
+    "id": 12,
+    "title": "1 Bedroom Condo for Sale at The Sea Condominium (70 SqM)",
+    "price_eur": 141000,
+    "price_thb": "5,180,000",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "size_sqm": 70,
+    "featured": false,
+    "type": "condo"
+  }
+]
