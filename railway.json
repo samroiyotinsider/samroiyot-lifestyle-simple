@@ -4,5 +4,6 @@
   },
   "deploy": {
     "startCommand": "npm run build && npm start"
-  }
+  },
+  "plugins": ["postgres"]
 }
