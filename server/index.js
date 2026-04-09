@@ -39,6 +39,22 @@ const authMiddleware = (req, res, next) => {
   }
 }
 
+// Sample properties data
+const sampleProperties = [
+  { name: 'Beachfront Villa', location: 'Hua Hin', description: 'Luxury beachfront property', price: 5000, bedrooms: 4, bathrooms: 3, image_url: 'https://via.placeholder.com/400x300?text=Beachfront+Villa', contact_phone: '+66-1-2345-6789' },
+  { name: 'Mountain Retreat', location: 'Khao Yai', description: 'Serene mountain getaway', price: 3500, bedrooms: 3, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Mountain+Retreat', contact_phone: '+66-1-2345-6789' },
+  { name: 'City Penthouse', location: 'Bangkok', description: 'Modern city living', price: 8000, bedrooms: 3, bathrooms: 3, image_url: 'https://via.placeholder.com/400x300?text=City+Penthouse', contact_phone: '+66-1-2345-6789' },
+  { name: 'Tropical Garden Home', location: 'Phuket', description: 'Lush tropical paradise', price: 4500, bedrooms: 5, bathrooms: 4, image_url: 'https://via.placeholder.com/400x300?text=Tropical+Garden', contact_phone: '+66-1-2345-6789' },
+  { name: 'Riverside Cottage', location: 'Chiang Mai', description: 'Charming riverside home', price: 2500, bedrooms: 2, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Riverside+Cottage', contact_phone: '+66-1-2345-6789' },
+  { name: 'Luxury Resort Villa', location: 'Koh Samui', description: 'Resort-style living', price: 7000, bedrooms: 4, bathrooms: 4, image_url: 'https://via.placeholder.com/400x300?text=Resort+Villa', contact_phone: '+66-1-2345-6789' },
+  { name: 'Modern Townhouse', location: 'Pattaya', description: 'Contemporary design', price: 3000, bedrooms: 3, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Townhouse', contact_phone: '+66-1-2345-6789' },
+  { name: 'Beachside Bungalow', location: 'Krabi', description: 'Cozy beach bungalow', price: 2800, bedrooms: 2, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Bungalow', contact_phone: '+66-1-2345-6789' },
+  { name: 'Luxury Penthouse', location: 'Hua Hin', description: 'Premium penthouse', price: 6500, bedrooms: 4, bathrooms: 3, image_url: 'https://via.placeholder.com/400x300?text=Luxury+Penthouse', contact_phone: '+66-1-2345-6789' },
+  { name: 'Private Island Villa', location: 'Phang Nga', description: 'Exclusive island property', price: 9000, bedrooms: 5, bathrooms: 5, image_url: 'https://via.placeholder.com/400x300?text=Island+Villa', contact_phone: '+66-1-2345-6789' },
+  { name: 'Urban Loft', location: 'Bangkok', description: 'Trendy urban space', price: 4000, bedrooms: 2, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Urban+Loft', contact_phone: '+66-1-2345-6789' },
+  { name: 'Garden Villa', location: 'Chiang Mai', description: 'Beautiful garden setting', price: 3200, bedrooms: 3, bathrooms: 2, image_url: 'https://via.placeholder.com/400x300?text=Garden+Villa', contact_phone: '+66-1-2345-6789' }
+]
+
 // Initialize database
 async function initializeDatabase() {
   try {
@@ -66,6 +82,30 @@ async function initializeDatabase() {
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
     `)
+
+    // Seed sample properties if table is empty
+    const result = await pool.query('SELECT COUNT(*) FROM properties')
+    if (result.rows[0].count === '0') {
+      for (const prop of sampleProperties) {
+        await pool.query(
+          `INSERT INTO properties (name, location, description, price, bedrooms, bathrooms, image_url, contact_phone)
+           VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+          [prop.name, prop.location, prop.description, prop.price, prop.bedrooms, prop.bathrooms, prop.image_url, prop.contact_phone]
+        )
+      }
+      console.log('Seeded 12 sample properties')
+    }
+
+    // Create admin user if doesn't exist
+    const userResult = await pool.query('SELECT COUNT(*) FROM users WHERE username = $1', ['admin'])
+    if (userResult.rows[0].count === '0') {
+      const hashedPassword = await bcryptjs.hash('admin123', 10)
+      await pool.query(
+        'INSERT INTO users (username, password) VALUES ($1, $2)',
+        ['admin', hashedPassword]
+      )
+      console.log('Created admin user (username: admin, password: admin123)')
+    }
 
     console.log('Database initialized')
   } catch (err) {
