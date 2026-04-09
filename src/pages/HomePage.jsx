@@ -29,8 +29,8 @@ export default function HomePage() {
     <main className="home-page">
       <div className="container">
         <div className="hero">
-          <h2>Luxury Properties & Concierge Services</h2>
-          <p>Discover premium accommodations and lifestyle experiences in Sam Roi Yot</p>
+          <h2>Sam Roi Yot Insider</h2>
+          <p>Properties for Sale</p>
         </div>
 
         {loading && <div className="loading">Loading properties...</div>}

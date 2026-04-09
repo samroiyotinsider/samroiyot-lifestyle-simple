@@ -29,7 +29,7 @@ export default function App() {
       <nav className="navbar">
         <div className="container">
           <div className="nav-content">
-            <h1 className="logo">Sam Roi Yot Lifestyle</h1>
+            <h1 className="logo">Sam Roi Yot Insider</h1>
             <div className="nav-right">
               {isAdmin && user && (
                 <>
