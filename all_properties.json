@@ -7,7 +7,7 @@
     "bathrooms": 5,
     "size_sqm": 258,
     "featured": true,
-    "image_url": "https://images.fazwaz.com/property/5-bedroom-hotel-for-sale-in-sam-roi-yot-hua-hin-u5988038/1.jpg",
+    "image_url": "/mango_hills_main.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/5-bedroom-hotel-for-sale-in-sam-roi-yot-hua-hin-u5988038",
     "unit_id": "U5988038"
   },
@@ -19,7 +19,7 @@
     "bathrooms": 1,
     "size_sqm": 52.76,
     "featured": true,
-    "image_url": "https://images.fazwaz.com/property/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5985439/1.jpg",
+    "image_url": "/sea_condo.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5985439",
     "unit_id": "U5985439"
   },
@@ -31,7 +31,7 @@
     "bathrooms": 0,
     "size_sqm": 4800,
     "featured": true,
-    "image_url": "https://images.fazwaz.com/property/land-for-sale-in-sam-roi-yot-hua-hin-u5971902/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902",
     "unit_id": "U5971902"
   },
@@ -43,7 +43,7 @@
     "bathrooms": 0,
     "size_sqm": 312,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/land-for-sale-in-sam-roi-yot-hua-hin-u6131064/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u6131064",
     "unit_id": "U6131064"
   },
@@ -55,7 +55,7 @@
     "bathrooms": 2,
     "size_sqm": 460,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081318/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081318",
     "unit_id": "U6081318"
   },
@@ -67,7 +67,7 @@
     "bathrooms": 2,
     "size_sqm": 460,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081299/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081299",
     "unit_id": "U6081299"
   },
@@ -79,7 +79,7 @@
     "bathrooms": 2,
     "size_sqm": 105,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081309/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081309",
     "unit_id": "U6081309"
   },
@@ -91,7 +91,7 @@
     "bathrooms": 0,
     "size_sqm": 574.8,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/land-for-sale-in-sam-roi-yot-hua-hin-u5971841/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971841",
     "unit_id": "U5971841"
   },
@@ -103,7 +103,7 @@
     "bathrooms": 0,
     "size_sqm": 150,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/land-for-sale-in-sam-roi-yot-hua-hin-u5971886/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971886",
     "unit_id": "U5971886"
   },
@@ -115,7 +115,7 @@
     "bathrooms": 0,
     "size_sqm": 1748,
     "featured": false,
-    "image_url": "https://images.fazwaz.com/property/land-for-sale-in-sam-roi-yot-hua-hin-u5971940/1.jpg",
+    "image_url": "/placeholder.webp",
     "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971940",
     "unit_id": "U5971940"
   }
