@@ -11,8 +11,7 @@ export default function PropertyCard({ property }) {
         )}
       </div>
       <div className="property-content">
-        <h3>{property.name}</h3>
-        <p className="location">{property.location}</p>
+        <h3>{property.title}</h3>
         <p className="description">{property.description}</p>
         
         <div className="property-details">
