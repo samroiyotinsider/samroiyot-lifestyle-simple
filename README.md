@@ -32,3 +32,4 @@ npm start
 ## Deployment
 
 This project is configured for Railway deployment. Simply push to GitHub and Railway will automatically build and deploy.
+# Trigger rebuild
