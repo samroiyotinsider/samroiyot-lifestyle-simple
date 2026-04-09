@@ -3,7 +3,8 @@ import PropertyCard from '../components/PropertyCard'
 import './HomePage.css'
 
 export default function HomePage() {
-  const [properties, setProperties] = useState([])
+  const [forSale, setForSale] = useState([])
+  const [forRent, setForRent] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -17,7 +18,8 @@ export default function HomePage() {
       const response = await fetch('/api/properties')
       if (!response.ok) throw new Error('Failed to fetch properties')
       const data = await response.json()
-      setProperties(data)
+      setForSale(data.for_sale || [])
+      setForRent(data.for_rent || [])
     } catch (err) {
       setError(err.message)
     } finally {
@@ -36,15 +38,28 @@ export default function HomePage() {
         {loading && <div className="loading">Loading properties...</div>}
         {error && <div className="error">Error: {error}</div>}
 
-        {!loading && properties.length > 0 && (
-          <div className="grid">
-            {properties.map(property => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
+        {!loading && forSale.length > 0 && (
+          <div>
+            <div className="grid">
+              {forSale.map(property => (
+                <PropertyCard key={property.id} property={property} />
+              ))}
+            </div>
           </div>
         )}
 
-        {!loading && properties.length === 0 && (
+        {!loading && forRent.length > 0 && (
+          <div className="rentals-section">
+            <h3>Properties for Rent</h3>
+            <div className="grid">
+              {forRent.map(property => (
+                <PropertyCard key={property.id} property={property} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {!loading && forSale.length === 0 && forRent.length === 0 && (
           <div className="empty-state">
             <p>No properties available at the moment.</p>
           </div>

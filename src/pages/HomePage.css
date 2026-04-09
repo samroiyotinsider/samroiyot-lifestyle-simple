@@ -38,3 +38,16 @@
 .empty-state {
   color: #999;
 }
+
+.rentals-section {
+  margin-top: 80px;
+  padding: 40px 0;
+  border-top: 2px solid #ddd;
+}
+
+.rentals-section h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
