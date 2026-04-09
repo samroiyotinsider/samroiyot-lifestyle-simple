@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Mango Hills — Exclusive Resort Estate for Sale | Sam Roi Yot, Thailand",
+    "title": "Exclusive Mango Hills Resort Estate Sam Roi Yot",
     "price_eur": 483000,
     "price_thb": "17,700,000",
     "bedrooms": 5,
@@ -11,12 +11,13 @@
     "type": "resort-estate",
     "image_url": "/hero-luxury-villa.jpg",
     "description": "Already generating 5-star Airbnb reviews and ranked in the top 5% of properties worldwide, Mango Hills is not just a home — it is a fully operational luxury retreat estate set inside a thriving 4-rai mango plantation in the heart of Sam Roi Yot National Park, just 1.5km from Dolphin Bay's pristine beaches.",
-    "listing_url": "https://www.fazwaz.com/property-sales/5-bedroom-hotel-for-sale-in-sam-roi-yot-hua-hin-u5988038"
+    "listing_url": "https://www.fazwaz.com/property-sales/5-bedroom-hotel-for-sale-in-sam-roi-yot-hua-hin-u5988038",
+    "unit_id": "U5988038"
   },
   {
     "id": 2,
     "title": "1 Bedroom Condo for Sale at The Sea Condominium",
-    "price_eur": 122600,
+    "price_eur": 125000,
     "price_thb": "4,500,000",
     "bedrooms": 1,
     "bathrooms": 1,
@@ -25,7 +26,8 @@
     "type": "condo",
     "image_url": "/hero-dolphin-bay-beach.jpg",
     "description": "Sea View Condo for Sale at The Sea Condominium, Sam Roi Yot. Nestled directly at Dolphin Bay on Sam Roi Yot Beach (just steps from the sand), this modern condo (completed 2017) offers breathtaking panoramic sea views, island vistas, and the serene backdrop of Khao Sam Roi Yot National Park.",
-    "listing_url": "https://www.fazwaz.com/property-sales/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5985439"
+    "listing_url": "https://www.fazwaz.com/property-sales/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5985439",
+    "unit_id": "U5985439"
   },
   {
     "id": 3,
@@ -39,12 +41,13 @@
     "type": "land",
     "image_url": "/land_u6131064_main.webp",
     "description": "Unlock unlimited potential in Sam Roi Yot – Thailand's serene hidden coastal gem, perfect for European expats, Chinese/Singaporean investors, or global buyers seeking a secure, build-ready plot with strong appreciation and flexibility.",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902",
+    "unit_id": "U5971902"
   },
   {
     "id": 4,
     "title": "So close to the beach side Land Plot for Sale | Sam Roi Yot",
-    "price_eur": 81500,
+    "price_eur": 80000,
     "price_thb": "2,990,000",
     "bedrooms": 0,
     "bathrooms": 0,
@@ -52,12 +55,13 @@
     "featured": false,
     "type": "land",
     "image_url": "/hero-national-park.jpg",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u6131064",
+    "unit_id": "U6131064"
   },
   {
     "id": 5,
     "title": "(275) 2-Bedroom House Expansive Garden Mountain View Beauty",
-    "price_eur": 95300,
+    "price_eur": 92900,
     "price_thb": "3,500,000",
     "bedrooms": 2,
     "bathrooms": 2,
@@ -65,12 +69,13 @@
     "featured": false,
     "type": "house",
     "image_url": "/house_u6081299_main.webp",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
+    "listing_url": "https://www.fazwaz.com/property-sales/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081318",
+    "unit_id": "U6081318"
   },
   {
     "id": 6,
     "title": "(273) 2-Bedroom House Mountain Views for Sale Sam Roi Yot TH",
-    "price_eur": 95300,
+    "price_eur": 92900,
     "price_thb": "3,500,000",
     "bedrooms": 2,
     "bathrooms": 2,
@@ -78,12 +83,13 @@
     "featured": false,
     "type": "house",
     "image_url": "/house_u6081309_main.webp",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
+    "listing_url": "https://www.fazwaz.com/property-sales/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081299",
+    "unit_id": "U6081299"
   },
   {
     "id": 7,
     "title": "(274) 2-Bedroom House Garden + Mountain Views Sam Roi Yot TH",
-    "price_eur": 81700,
+    "price_eur": 79700,
     "price_thb": "3,000,000",
     "bedrooms": 2,
     "bathrooms": 2,
@@ -91,25 +97,13 @@
     "featured": false,
     "type": "house",
     "image_url": "/house_u6081318_main.webp",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
+    "listing_url": "https://www.fazwaz.com/property-sales/2-bedroom-house-for-sale-in-sam-roi-yot-hua-hin-u6081309",
+    "unit_id": "U6081309"
   },
   {
     "id": 8,
-    "title": "Renovated 3-Bed House + Chanote Land Sam Roi Yot – Mountain",
-    "price_eur": 190000,
-    "price_thb": "6,970,000",
-    "bedrooms": 3,
-    "bathrooms": 3,
-    "size_sqm": 270,
-    "featured": false,
-    "type": "house",
-    "image_url": "/tropical_villa_main.webp",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971902"
-  },
-  {
-    "id": 9,
     "title": "Prime Sea & Mountain View Land 300m to Beach Sam Roi Yot",
-    "price_eur": 59900,
+    "price_eur": 60000,
     "price_thb": "2,200,000",
     "bedrooms": 0,
     "bathrooms": 0,
@@ -117,10 +111,11 @@
     "featured": false,
     "type": "land",
     "image_url": "/hero-beach-fishermen.jpg",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971841"
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971841",
+    "unit_id": "U5971841"
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Chanote Land 150 sqm Sam Roi Yot 1.9km to Sea + Mountain View",
     "price_eur": 54500,
     "price_thb": "2,000,000",
@@ -130,12 +125,13 @@
     "featured": false,
     "type": "land",
     "image_url": "/hero-dolphin-bay-sunset.jpg",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971886"
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971886",
+    "unit_id": "U5971886"
   },
   {
-    "id": 11,
+    "id": 10,
     "title": "Chanote Land 1 Rai 37 sq wah Sam Roi Yot – Mountain View",
-    "price_eur": 54500,
+    "price_eur": 55000,
     "price_thb": "2,000,000",
     "bedrooms": 0,
     "bathrooms": 0,
@@ -143,19 +139,7 @@
     "featured": false,
     "type": "land",
     "image_url": "/punoi_bungalow_hero.webp",
-    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971940"
-  },
-  {
-    "id": 12,
-    "title": "1 Bedroom Condo for Sale at The Sea Condominium (70 SqM)",
-    "price_eur": 141000,
-    "price_thb": "5,180,000",
-    "bedrooms": 1,
-    "bathrooms": 1,
-    "size_sqm": 70,
-    "featured": false,
-    "type": "condo",
-    "image_url": "/kits-bungalow.png",
-    "listing_url": "https://www.fazwaz.com/property-sales/1-bedroom-condo-for-sale-at-the-sea-condominium-in-sam-roi-yot-hua-hin-u5971738"
+    "listing_url": "https://www.fazwaz.com/property-sales/land-for-sale-in-sam-roi-yot-hua-hin-u5971940",
+    "unit_id": "U5971940"
   }
 ]
