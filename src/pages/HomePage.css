@@ -51,3 +51,49 @@
   color: #333;
   text-align: center;
 }
+
+
+.youtube-promo {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px 0 50px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.youtube-promo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.3);
+}
+
+.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.youtube-link:hover {
+  opacity: 0.9;
+}
+
+.youtube-icon {
+  font-size: 28px;
+  display: inline-block;
+}
+
+.youtube-description {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
