@@ -7,6 +7,15 @@ export default function PropertyCard({ property }) {
     }
   }
 
+  // Convert EUR to THB (using current rate ~40 THB per EUR)
+  const eurToThb = (eur) => {
+    return Math.round(eur * 40)
+  }
+
+  const formatPrice = (price) => {
+    return price.toLocaleString('th-TH')
+  }
+
   return (
     <div className="card property-card" onClick={handleCardClick} style={{ cursor: property.listing_url ? 'pointer' : 'default' }}>
       <div className="property-image">
@@ -33,9 +42,9 @@ export default function PropertyCard({ property }) {
           )}
         </div>
 
-        {property.price && (
+        {property.price_eur && (
           <div className="price">
-            ${property.price.toLocaleString()} / night
+            ฿{formatPrice(eurToThb(property.price_eur))}
           </div>
         )}
 
