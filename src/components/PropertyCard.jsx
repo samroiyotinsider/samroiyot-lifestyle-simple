@@ -7,9 +7,12 @@ export default function PropertyCard({ property }) {
     }
   }
 
-  // Convert EUR to THB (using current rate ~40 THB per EUR)
-  const eurToThb = (eur) => {
-    return Math.round(eur * 40)
+  // Use price_thb if available, otherwise convert EUR to THB
+  const getThbPrice = (property) => {
+    if (property.price_thb) {
+      return property.price_thb
+    }
+    return Math.round(property.price_eur * 40)
   }
 
   const formatPrice = (price) => {
@@ -42,9 +45,9 @@ export default function PropertyCard({ property }) {
           )}
         </div>
 
-        {property.price_eur && (
+        {(property.price_eur || property.price_thb) && (
           <div className="price">
-            ฿{formatPrice(eurToThb(property.price_eur))}
+            ฿{formatPrice(getThbPrice(property))}
           </div>
         )}
 
