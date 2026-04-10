@@ -31,8 +31,7 @@ export default function HomePage() {
     <main className="home-page">
       <div className="container">
         <div className="hero">
-          <h2>Sam Roi Yot Insider</h2>
-          <p>Properties for Sale</p>
+          <img src="/banner-hero.webp" alt="Sam Roi Yot Insider - Thailand's Last Coastal Secret" className="hero-banner" />
         </div>
 
         <div className="youtube-section">

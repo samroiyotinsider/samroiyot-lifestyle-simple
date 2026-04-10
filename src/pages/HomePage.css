@@ -5,18 +5,21 @@
 .hero {
   text-align: center;
   margin-bottom: 60px;
-  padding: 40px 0;
+  padding: 0;
 }
 
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #333;
+.hero-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.hero p {
-  font-size: 18px;
-  color: #666;
+@media (max-width: 768px) {
+  .hero-banner {
+    border-radius: 4px;
+  }
 }
 
 .loading,
