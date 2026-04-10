@@ -7,16 +7,16 @@ export default function PropertyCard({ property }) {
     }
   }
 
-  // Use price_thb if available, otherwise convert EUR to THB
-  const getThbPrice = (property) => {
+  // Display EUR prices directly, or THB if specified
+  const getDisplayPrice = (property) => {
     if (property.price_thb) {
-      return property.price_thb
+      return { amount: property.price_thb, currency: '฿' }
     }
-    return Math.round(property.price_eur * 40)
+    return { amount: property.price_eur, currency: '€' }
   }
 
   const formatPrice = (price) => {
-    return price.toLocaleString('th-TH')
+    return price.toLocaleString('en-US')
   }
 
   return (
@@ -47,7 +47,7 @@ export default function PropertyCard({ property }) {
 
         {(property.price_eur || property.price_thb) && (
           <div className="price">
-            ฿{formatPrice(getThbPrice(property))}
+            {getDisplayPrice(property).currency}{formatPrice(getDisplayPrice(property).amount)}
           </div>
         )}
 
