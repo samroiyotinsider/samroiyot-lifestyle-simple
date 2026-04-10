@@ -35,12 +35,19 @@ export default function HomePage() {
           <p>Properties for Sale</p>
         </div>
 
-        <div className="youtube-promo">
-          <a href="https://www.youtube.com/@samroiyotinsider" target="_blank" rel="noopener noreferrer" className="youtube-link">
-            <span className="youtube-icon">▶</span>
-            <span className="youtube-text">Subscribe to our YouTube Channel</span>
-          </a>
-          <p className="youtube-description">Discover stunning property tours, local insights, and exclusive content about Sam Roi Yot's most beautiful properties. Watch our latest videos to explore your dream home!</p>
+        <div className="youtube-section">
+          <div className="youtube-content">
+            <div className="youtube-left">
+              <h3>Explore Our Properties</h3>
+              <p>Watch detailed video tours and discover the beauty of Sam Roi Yot through our YouTube channel. Get an exclusive look at each property before you visit.</p>
+              <a href="https://www.youtube.com/@samroiyotinsider" target="_blank" rel="noopener noreferrer" className="youtube-btn">
+                <span className="play-icon">▶</span> View on YouTube
+              </a>
+            </div>
+            <div className="youtube-right">
+              <div className="youtube-badge">Featured Content</div>
+            </div>
+          </div>
         </div>
 
         {loading && <div className="loading">Loading properties...</div>}
