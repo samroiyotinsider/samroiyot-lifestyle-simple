@@ -124,24 +124,20 @@
   ],
   "for_rent": [
     {
-      "id": 1,
-      "title": "Beachfront Villa with Pool",
-      "price": 3500,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "size_sqm": 250,
-      "image_url": "/villa_rent_1.webp",
-      "listing_url": "#"
+      "id": 11,
+      "title": "Punoi Bungalow",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image_url": "/punoi_bungalow_airbnb.webp",
+      "listing_url": "https://www.airbnb.com/rooms/1594194240398038277"
     },
     {
-      "id": 2,
-      "title": "Modern Apartment Near Beach",
-      "price": 1200,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "size_sqm": 90,
-      "image_url": "/apartment_rent_1.webp",
-      "listing_url": "#"
+      "id": 12,
+      "title": "Baan Raweewan",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image_url": "/baan_raweewan_airbnb.webp",
+      "listing_url": "https://www.airbnb.com/rooms/1657231890196599294"
     }
   ]
 }
